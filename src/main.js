@@ -212,7 +212,7 @@ class LINE extends LineAPI {
             })
         }
 
-        if(txt === 'kickall' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_)) {
+        if(txt === 'ikkeh ikkeh kimochi' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_)) {
             let { listMember } = await this.searchGroup(seq.to);
             for (var i = 0; i < listMember.length; i++) {
                 if(!isAdminOrBot(listMember[i].mid)){
@@ -259,11 +259,11 @@ class LINE extends LineAPI {
         if(txt == 'cancel off') {
             this.setState(seq)
         }
-        if(txt == 'kick on') {
+        if(txt == 'protect on') {
             this.setState(seq)
         }
 
-        if(txt == 'kick off') {
+        if(txt == 'protect off') {
             this.setState(seq)
         }
 	
